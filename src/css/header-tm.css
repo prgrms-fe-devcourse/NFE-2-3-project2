@@ -1,0 +1,43 @@
+/* 헤더 태블릿, 모바일 css */
+/* 1024px */
+
+header.on {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+}
+
+header.on .header-inner {
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 30px;
+}
+
+header.on .logo {
+  display: none;
+}
+
+header.on .notification {
+  display: none;
+}
+
+header.on .bars {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+header.on .modeChange {
+  display: block;
+}
+
+header.on .buttonComponent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

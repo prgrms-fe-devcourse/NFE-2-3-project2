@@ -1,0 +1,59 @@
+/* 스와이퍼 커스텀 */
+.swiper-pagination-box {
+  display: flex;
+  justify-content: end;
+  margin-top: 5px;
+  padding-right: 30px;
+  font-size: 13px;
+}
+.swiper-pagination {
+  position: inherit;
+  width: fit-content;
+  background-color: #e7effa;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  transform: translateY(-50%);
+  top: 50%;
+  color: var(--swiper-navigation-color, #265cac);
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-button-next {
+  right: 2px;
+}
+.swiper-button-prev {
+  left: 2px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(234, 234, 234, 0.7);
+}
+
+.swiper.dark .swiper-button-next,
+.swiper.dark .swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swiper.dark .swiper-button-next::after,
+.swiper.dark .swiper-button-prev::after {
+  color: white;
+}
+
+.swiper.dark .swiper-button-next:hover,
+.swiper.dark .swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+}

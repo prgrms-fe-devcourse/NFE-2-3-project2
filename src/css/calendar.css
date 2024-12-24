@@ -1,0 +1,187 @@
+.react-calendar {
+  padding: 30px;
+  /* 크기조정 */
+  width: 400px;
+  max-width: 100%;
+  background-color: #fff;
+  color: #4a5660;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none !important;
+  /* box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+}
+
+/* 네비게이션 가운데 정렬 */
+.react-calendar__navigation {
+  justify-content: center;
+}
+/* << < 년 > >> 한번에 적용 */
+.react-calendar__navigation button {
+  color: black;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #f8f8fa;
+}
+.react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+}
+abbr[title] {
+  text-decoration: none;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #4a5660;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: #f8f8fa;
+  border-radius: 6px;
+}
+/* 오늘  */
+.react-calendar__tile--now {
+  background: white;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: white;
+}
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #f8f8fa;
+}
+.react-calendar__tile--active {
+  border-radius: 6px;
+  color: #4a5660 !important;
+}
+/* .react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #6f48eb;
+  color: white;
+} */
+/* .react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #f8f8fa;
+} */
+.react-calendar__tile--range {
+  background: #f8f8fa;
+  color: #6f48eb;
+  border-radius: 0;
+}
+.react-calendar__tile--rangeStart {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background: white;
+}
+.react-calendar__tile--rangeEnd {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: white;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #f87171;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 1px;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  color: #b5bec6;
+  font-weight: 400;
+}
+/* 일요일에만 빨간 폰트 */
+/* .react-calendar__month-view__weekdays__weekday--weekend abbr[title="일요일"] {
+  color: red;
+} */
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  /* 원의 크기 */
+  height: 35px;
+  /* 원의 크기 */
+  border-radius: 50%;
+  /* 원 모양으로 만들기 */
+  background-color: #6f48eb;
+  /* 원의 배경색 */
+  color: white;
+}
+.react-calendar__tile {
+  border: 1px solid red;
+  height: 48px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 다크모드 */
+.dark .react-calendar {
+  color: #e0e0e0;
+  background-color: #373737;
+}
+
+.dark .react-calendar__navigation__label__labelText {
+  color: white;
+}
+.dark .react-calendar__navigation button[disabled] {
+  background-color: #646464;
+}
+
+/* << < 년 > >> 한번에 적용 */
+.dark .react-calendar__navigation button {
+  color: white;
+}
+
+.dark .react-calendar__navigation button:enabled:hover,
+.dark .react-calendar__navigation button:enabled:focus {
+  background-color: #646464;
+}
+
+.dark .react-calendar__month-view__days__day--weekend {
+  color: #e0e0e0;
+}
+
+.dark .react-calendar__tile:enabled:hover,
+.dark .react-calendar__tile:enabled:focus {
+  background: #646464;
+}
+
+/* 오늘 */
+.dark .react-calendar__tile--now {
+  background: #373737;
+}
+
+.dark .react-calendar__tile--now:enabled:hover,
+.dark .react-calendar__tile--now:enabled:focus {
+  background: #646464;
+}
+
+.dark .react-calendar__tile--hasActive:enabled:hover,
+.dark .react-calendar__tile--hasActive:enabled:focus {
+  background: #646464;
+}
+
+.dark .react-calendar__tile--active {
+  color: #e0e0e0 !important;
+  background-color: #373737;
+}
+
+.dark .react-calendar__month-view__weekdays__weekday {
+  color: #e0e0e0;
+}
+
+.dark .circle {
+  background-color: #f95896;
+  color: #e0e0e0;
+}
