@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.scroll::-webkit-scrollbar {
+  scrollbar-width: 8px;
+  width: 8px;
+}
+
+/* 스크롤바 막대 꾸미기 */
+.scroll::-webkit-scrollbar-thumb {
+  background: #91c788;
+  border-radius: 4px;
+}
+
+/* 스크롤바 트랙 꾸미기 */
+.scroll::-webkit-scrollbar-track {
+  background-color: #dbdbdb;
+  border-radius: 4px;
+}
+.dark .scroll::-webkit-scrollbar-track {
+  background-color: #4d4d4d;
+}
+
+.font-angkor {
+  font-family: "Angkor", serif;
+  font-style: normal;
+}
+
+.font-noto {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.font-roboto {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.quill > .ql-container > .ql-editor {
+  font-size: 16px;
+  padding: 12px 0;
+}
+.quill > .ql-container > .ql-editor.ql-blank::before {
+  font-size: 16px;
+  color: grey;
+  font-style: normal;
+  left: 0;
+  right: 0;
+}
+.ql-bubble {
+  z-index: 20;
+}
+.ql-editor {
+  overflow-y: unset !important;
+}
+.ql-editor a {
+  color: rgb(59 130 246);
+}
+
+.scene {
+  perspective: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cube {
+  transform-style: preserve-3d;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-origin: center center;
+}
+
+.back {
+  transform: translateZ(-100px) rotateX(180deg);
+}
+
+.left {
+  transform: translateX(-100px) rotateY(90deg);
+}
+
+.right {
+  transform: translateX(100px) rotateY(90deg);
+}
+
+.top {
+  transform: translateY(-100px) rotateX(90deg);
+}
+
+.bottom {
+  transform: translateY(100px) rotateX(270deg);
+}
+
+.front {
+  transform: translateZ(100px);
+}
