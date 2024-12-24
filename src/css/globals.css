@@ -1,0 +1,36 @@
+body {
+  font-family: "Pretendard", sans-serif;
+  overflow-y: scroll;
+  @apply text-gray-22 dark:text-gray-ee transition-colors;
+  @apply bg-white dark:bg-gray-22;
+  @apply border-gray-22 dark:border-gray-ee;
+}
+
+input,
+textarea {
+  @apply dark:text-gray-22;
+  /* @apply dark:bg-[#fdfdfd]; */
+  @apply dark:bg-white/10;
+}
+
+input::placeholder,
+textarea::placeholder {
+  @apply !text-gray-c8;
+}
+
+label {
+  @apply dark:!text-gray-ee;
+}
+
+p {
+  @apply dark:text-gray-c8;
+}
+
+*:focus {
+  outline: none;
+}
+
+::selection {
+  @apply bg-secondary;
+  @apply dark:text-gray-22;
+}

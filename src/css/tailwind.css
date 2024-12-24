@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .primary-btn {
+    @apply bg-primary text-gray-22 hover:bg-primary/80 disabled:bg-gray-c8;
+  }
+
+  .secondary-btn {
+    @apply bg-secondary text-gray-22 hover:bg-secondary/80;
+  }
+
+  .cancel-btn {
+    @apply bg-[#CCCCCC] text-gray-22 hover:bg-[#CCCCCC]/80;
+  }
+
+  .profile-shadow {
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .image-shadow {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+
+  .screen-100vh {
+    height: calc(100vh - 70px);
+  }
+
+  /* CUSTOM SCROLL BAR */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 16px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #a0a0a0;
+  }
+
+  .loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(farthest-side, #fcc404 94%, #0000) top/8px 8px
+        no-repeat,
+      conic-gradient(#0000 30%, #fcc404);
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      #0000 calc(100% - 8px),
+      #000 0
+    );
+    animation: l13 1s infinite linear;
+  }
+  @keyframes l13 {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+
+  .profile {
+    @apply bg-white/20 border border-gray-ee dark:border-gray-ee/50 object-cover;
+  }
+
+  .profile-hover {
+    @apply group-hover:border-gray-c8 group-hover:bg-white/80;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .toast {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+}
