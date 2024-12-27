@@ -1,0 +1,48 @@
+/* Quill 텍스트 영역 처리 */
+.ql-container {
+  margin-top: 20px;
+  margin-right: 20px;
+  border: none !important; /* 테두리 제거 */
+  box-shadow: none !important; /* 그림자 제거 */
+  overflow-y: auto;
+}
+/* 에디터 전체 디자인 */
+.ql-editor {
+  border: none;
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+}
+
+/* 툴바 테두리 및 그림자 여기 바꿀거면 상의*/
+.ql-toolbar {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important; /*투명하게*/
+  width: 100%; /* 기본 너비 */
+  max-width: 480px; /* 최대 너비 */
+}
+
+/* 기본 글자 크기 옵션 스타일 */
+.ql-size .ql-picker-item[data-value="small"]::before {
+  content: "Small";
+}
+.ql-size .ql-picker-item[data-value="large"]::before {
+  content: "Large";
+}
+.ql-size .ql-picker-item[data-value="huge"]::before {
+  content: "Huge";
+}
+
+/* 에디터가 비어있을 때 속성 변경*/
+.ql-editor.ql-blank::before {
+  color: black;
+  left: 12px;
+  font-size: 20px;
+  font-style: italic;
+  opacity: 0.8;
+  content: attr(data-placeholder);
+}
+/* write section 용도. 스크롤 바로 동작! */
+.ql-container.ql-snow {
+  border-style: none !important;
+  height: 400px;
+}

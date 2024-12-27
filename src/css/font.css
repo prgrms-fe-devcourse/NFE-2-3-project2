@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "LAB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB%EB%94%94%EC%A7%80%ED%84%B8.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.LAB-digital {
+  font-family: "LAB";
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.s-core-dream-light {
+  font-family: 'S-CoreDream-3Light';
+}
